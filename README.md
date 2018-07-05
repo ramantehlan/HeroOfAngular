@@ -64,6 +64,8 @@ HeroOfAngular is a upgraded version of tutorial(**Tour of Heroes**) created by A
 
 ## File Structure
 
+> `HeroOfAngular` is the root folder, and `src` is where our app lives.
+
 ```
 
 HeroOfAngular
@@ -108,6 +110,25 @@ HeroOfAngular
 |--tslint.json
 
 ```
+
+**`src` folder**
+
+File | Purpose |
+-----|---------|
+app/app.component.{ts,html,css,spec.ts} | Root components of what will become a tree of nested components, as the app grow. 
+app/app.module.ts | `root module` tells angular how to assemble the application.
+assets/* | Place to put assets like images, gifs etc.
+environments/* | 
+favicon.ico | You app icon.
+index.html | Main HTML page, CLI automatically adds all the required file, like js, css etc while building your app.
+main.ts | Main entry point for your app
+polyfills.ts | Polyfills help normalize different levels of support of the web standards in different browsers.
+styles.css | Global style file.
+test.ts | Main entry point for units tests.
+tsconfig.{app\|spec}.json | TypeScript compiler configuration for the Angular app `tsconfig.app.json` and for the unit tests `tsconfig.spec.json`.
+
+**`root` folder**
+
 
 ## Best Practice
 
