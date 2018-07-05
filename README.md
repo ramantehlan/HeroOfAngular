@@ -9,7 +9,8 @@ HeroOfAngular is a upgraded version of tutorial(**Tour of Heroes**) created by A
 3. [Development Environment](#development-environment)
 4. [File Structure](#file-structure)
 5. [Best Practice](#best-practice)
-    1. [SCSS and CSS](#scss-and-css)
+    1. [General](#general)
+    2. [SCSS and CSS](#scss-and-css)
 6. [Contribution](#contribution)
 7. [Resources](#resources)
 
@@ -63,7 +64,64 @@ HeroOfAngular is a upgraded version of tutorial(**Tour of Heroes**) created by A
 
 ## File Structure
 
+```
+
+HeroOfAngular
+|--e2e
+|   |--app.e2e-spec.ts
+|   |--app.po.ts
+|   |--tsconfig.e2e.json
+|
+|--node_modules/...
+|--src
+|   |--app
+|   |   |--app.component.css
+|   |   |--app.component.html
+|   |   |--app.component.spec.ts
+|   |   |--app.component.ts
+|   |   |--app.module.ts
+|   |   
+|   |--assets
+|   |   |--gitkeep
+|   |
+|   |--environments
+|   |   |--environment.prod.ts
+|   |   |--environment.ts
+|   |
+|   |--favicon.ico
+|   |--index.html
+|   |--main.ts
+|   |--polyfills.ts
+|   |--styles.css
+|   |--test.ts
+|   |--tsconfig.app.json
+|   |--tsconfig.spec.json
+|
+|--.angular-cli.json
+|--.editorconfig
+|--.gitignore
+|--karma.conf.js
+|--package.json
+|--protractor.conf.js
+|--README.md
+|--tsconfig.json
+|--tslint.json
+
+```
+
 ## Best Practice
+
+### **General**
+
+- **Comments** <br>
+    Comments are what's make the communication possible between programmers and developers, they we created for a single main reason, to make the code readable.
+    <br><br>
+    We need to comment our logic, reason and flow for making a algoritham/function in a app. we don't have to comment everything, but everything we is based out of our logic.
+
+- **Documentation** <br> 
+    Documentations are the gates between code base and programmer/humans, they are decrease the time of understanding the code base and make the development process fast.
+    <br><br>
+    Documentation grow, as our code grow, continous addition is a must for documentation to stay relevent.
 
 ### **SCSS and CSS** 
 
@@ -79,7 +137,7 @@ It makes sheet more readable.
 
 - **BEM Scheme** <br>
 **B**ody **E**lement **M**odifier(BEM) gives sense to the names, which is globally accepted. let's say we have a paper-car class, here car is body, it's parts are element and any change in its part is modifier. Following should be the best way to name it in **Style Sheet**.
-name the 
+
 ```scss
     //This is how we name the body
     .paper-car{}
@@ -105,4 +163,4 @@ Using different class and id name for Style Sheet and Script file is best, it av
 
 ## Resources
 - [Angular Guide](https://v5.angular.io/guide/quickstart)
-- [Airbnb Style Guide](https://github.com/airbnb/javascript#table-of-contents)
+- [Airbnb JavaScript Guide](https://github.com/airbnb/javascript)
