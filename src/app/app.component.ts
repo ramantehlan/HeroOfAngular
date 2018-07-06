@@ -27,5 +27,5 @@ let config = new Config();
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title:string = config.appname;
+   
 }

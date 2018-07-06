@@ -1,0 +1,19 @@
+// 
+//  This sheet is to design the header of the page
+// 
+@import '../../style/_base.scss';
+
+.top{
+    @extend %primary;
+    height: $top-height;
+
+    h1{
+        margin:0px;
+        padding:{
+            top:($top-height - $h1)/2;
+            left:30px;
+        }
+        float: left;
+        background-color:green;
+    }
+}
