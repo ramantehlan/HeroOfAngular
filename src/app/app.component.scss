@@ -1,0 +1,18 @@
+// 
+//  This sheet is to design the root component
+// 
+@import '../style/_base.scss';
+
+//
+// Variables
+//
+
+
+//
+// Main style
+//
+.body{
+    @extend %surface;
+
+    margin: 0px auto;
+}
