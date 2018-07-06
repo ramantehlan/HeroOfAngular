@@ -246,6 +246,8 @@ Let's say we want to delete a component `test`
 ```
 
 2. **Remove declaration and import from `src/app/app.module.ts`**
+<Br>
+Remove Import of `TestComponent` from imports and remove it from declarations.
 
 > Warning: Make sure before deleting any component, that it's not used by the app.
 
