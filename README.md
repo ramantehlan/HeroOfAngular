@@ -239,7 +239,8 @@ declarations: [
 Let's say we want to delete a component `test`
 
 1. **Delete the component folder from the `src/app/` folder**
-<br>
+
+
 ```bash
     sudo rm -r test
 ```
