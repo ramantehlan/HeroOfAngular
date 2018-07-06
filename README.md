@@ -185,38 +185,38 @@ export class TestComponent implements OnInit {
 
 }
 ```
+> Note: Replace `TestComponent`, `templateUrl`, `styleUrls` and selector with your component values
 
 3. **Paste following code in `test.component.spec.ts`**
 
 ```typescript
-import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
-describe('AppComponent', () => {
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { TestComponent } from './test.component';
+
+describe('TestComponent', () => {
+  let component: TestComponent;
+  let fixture: ComponentFixture<TestComponent>;
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
+      declarations: [ TestComponent ]
+    })
+    .compileComponents();
   }));
-  it('should create the app', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  }));
-  it(`should have as title 'app'`, async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('app');
-  }));
-  it('should render title in a h1 tag', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(TestComponent);
+    component = fixture.componentInstance;
     fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to App!');
-  }));
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
 });
 ```
+> Note: Replace `TestComponent` with the class name of your new component.
 
 4. **Update `src/app/app.module.ts`**
 
