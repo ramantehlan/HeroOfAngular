@@ -3,17 +3,37 @@
 // 
 @import '../../style/_base.scss';
 
+//
+// Variables
+//
+$padding-gap: 30px;
+$menu-height: 40px;
+
+
+//
+// Main style
+//
 .top{
     @extend %primary;
+    @extend %list-menu;
+    
     height: $top-height;
 
     h1{
-        margin:0px;
-        padding:{
-            top:($top-height - $h1)/2;
-            left:30px;
-        }
         float: left;
-        background-color:green;
+        
+        margin:{
+            top:($top-height - $h1)/2 - 5;
+            left:$padding-gap;
+        }
+    }
+
+    .top-menu{
+        float: right;
+        margin:{
+            top: ($top-height - $menu-height)/2;
+            right:$padding-gap;
+        }
+        
     }
 }
