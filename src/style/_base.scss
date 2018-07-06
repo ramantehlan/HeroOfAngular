@@ -13,6 +13,38 @@ h1{
     padding:0px;
 }
 
+%list-menu{
+     
+    ul{
+        list-style:none;
+        margin:0px;  
+        font-family: 'Raleway', sans-serif;   
+    }
+
+    li{ 
+            color: $secondary-text-color;
+            list-style-type: none;
+            cursor: pointer;
+            position: relative;
+            left: 0;
+            float: left;
+            height:$list-menu-height;
+            line-height:$list-menu-height;
+            border-radius:5px;
+            padding:{
+                left:$list-menu-padding-gap;
+                right:$list-menu-padding-gap;
+            }
+            margin:{
+                right:$list-menu-padding-gap;
+            }
+    
+            &:hover {
+                background-color: $secondary-color;
+            }
+    }
+}
+
 %primary {
     background-color: $primary-color;
     color: $primary-text-color;
