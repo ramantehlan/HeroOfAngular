@@ -155,9 +155,9 @@ tslint.json         | Linting configuration for [TSLint](https://palantir.github
 This section will tell you how to do some basic tasks in Angular, without using CLI
 
 ### How to add more components
-    Let's say we want to create a component `test`
+Let's say we want to create a component `test`
 
-1 **Create following files**
+1. **Create following files**
 
 ```
     src/app/test/test.component.css
@@ -166,7 +166,7 @@ This section will tell you how to do some basic tasks in Angular, without using 
     src/app/test/test.component.ts
 ```
 
-2 **Paste following code in `test.component.ts`**
+2. **Paste following code in `test.component.ts`**
 
 ```typescript
     import { Component, OnInit } from '@angular/core';
@@ -186,7 +186,7 @@ export class TestComponent implements OnInit {
 }
 ```
 
-3 **Paste following code in `test.component.spec.ts`**
+3. **Paste following code in `test.component.spec.ts`**
 
 ```typescript
 import { TestBed, async } from '@angular/core/testing';
@@ -218,7 +218,7 @@ describe('AppComponent', () => {
 });
 ```
 
-4 **Update `src/app/app.module.ts`**
+4. **Update `src/app/app.module.ts`**
 
 - Add import of new component 
 
