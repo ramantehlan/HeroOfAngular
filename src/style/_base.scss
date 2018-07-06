@@ -13,6 +13,27 @@ h1{
     padding:0px;
 }
 
+
+//
+// Mixines
+//
+
+
+/*
+    It is to give any object the property of surface
+*/
+
+%surface{
+    background-color: $surface-color;
+    color: $surface-text-color;
+    border-radius:$border-radius;
+    border: $border;
+    padding:$box-padding
+}
+
+/*
+    List menu is the menu creating using List(UL/LI)
+*/
 %list-menu{
      
     ul{
@@ -45,6 +66,9 @@ h1{
     }
 }
 
+/*
+    This is to give any object the basic property of PRIMARY 
+*/
 %primary {
     background-color: $primary-color;
     color: $primary-text-color;
