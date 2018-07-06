@@ -5,13 +5,12 @@
 @import '_config';
 
 *{
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Roboto', sans-serif;   
 }
-
 
 h1{
     font-size:$h1;
-    font-weight:normal;
+    padding:0px;
 }
 
 %primary {

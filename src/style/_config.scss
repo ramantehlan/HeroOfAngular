@@ -9,16 +9,16 @@
 //
 // Material Colors
 //
-$primary-color: #303f9f;
-$primary-light-color: #666ad1;
-$primary-dark-color: #001970;
-$secondary-color: #3e2723;
-$secondary-light-color: #6a4f4b;
-$secondary-dark-color: #1b0000;
-$background-color: #f7efef;
+$primary-color: #311b92;
+$primary-light-color: #6746c3;
+$primary-dark-color: #000063;
+$secondary-color: #263238;
+$secondary-light-color: #4f5b62;
+$secondary-dark-color: #000a12;
+$background-color: #e1f2fe;
 $surface-color: #ffffff;
-$error-color: #ff150a;
-$border-color: #d4cbcb;
+$error-color: #b71c1c;
+$border-color: #cedde8;
 
 //
 // Text Colors
@@ -26,7 +26,7 @@ $border-color: #d4cbcb;
 $primary-text-color: #fff;
 $secondary-text-color: #fff;
 $background-text-color: #000;
-$surface-text-color: #ee0;
+$surface-text-color: #1c1c1c;
 $error-text-color: #fff;
 
 //
@@ -40,15 +40,14 @@ $error-text-color: #fff;
 //
 $h1: 30px;
 
-
 //
 // Dimentions/paddings
 //
-$top-height: 80px;
+$top-height: 100px;
 $box-padding: 30px;
-$gap: 40px;
 
 //
 // Other
 //
 $border: 1px solid $border-color;
+$borderRadious:6px;
