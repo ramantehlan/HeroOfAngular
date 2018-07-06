@@ -90,6 +90,13 @@ HeroOfAngular
 |   |   |--environment.prod.ts
 |   |   |--environment.ts
 |   |
+|   |--lib
+|   |   |--config.inc.ts
+|   |
+|   |--style
+|   |   |--_base.scss
+|   |   |--_config.scss
+|   |
 |   |--favicon.ico
 |   |--index.html
 |   |--main.ts
@@ -142,6 +149,92 @@ protractor.conf.js  | End-to-end test configuration for [Protractor](http://www.
 README.md           | Basic documentation for your project.
 tsconfig.json       | TypeScript compiler configuration for your IDE to pick up and give you helpful tooling.
 tslint.json         | Linting configuration for [TSLint](https://palantir.github.io/tslint/) together with [Codelyzer](http://codelyzer.com/), used when running `ng lint`. Linting helps keep your code style consistent.
+
+
+## How to 
+This section will tell you how to do some basic tasks in Angular, without using CLI
+
+### How to add more components
+    Let's say we want to create a component `test`
+
+1 **Create following files**
+
+```
+    src/app/test/test.component.css
+    src/app/test/test.component.html
+    src/app/test/test.component.spec.ts
+    src/app/test/test.component.ts
+```
+
+2 **Paste following code in `test.component.ts`**
+
+```typescript
+    import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-test',
+  templateUrl: './test.component.html',
+  styleUrls: ['./test.component.css']
+})
+export class TestComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+```
+
+3 **Paste following code in `test.component.spec.ts`**
+
+```typescript
+import { TestBed, async } from '@angular/core/testing';
+import { AppComponent } from './app.component';
+describe('AppComponent', () => {
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [
+        AppComponent
+      ],
+    }).compileComponents();
+  }));
+  it('should create the app', async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app).toBeTruthy();
+  }));
+  it(`should have as title 'app'`, async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app.title).toEqual('app');
+  }));
+  it('should render title in a h1 tag', async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to App!');
+  }));
+});
+```
+
+4 **Update `src/app/app.module.ts`**
+
+- Add import of new component 
+
+```typescript
+    import { TestComponent } from './test/test.component';
+```
+
+- Add test component to declarations
+
+```typescript
+declarations: [
+    AppComponent,
+    TestComponent
+  ]
+```
+
 
 ## Best Practice
 

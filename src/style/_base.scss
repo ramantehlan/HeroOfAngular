@@ -1,0 +1,20 @@
+// 
+//  This file will be fetched by components to get the style
+// 
+
+@import '_config';
+
+*{
+    font-family: 'Roboto', sans-serif;    
+}
+
+
+h1{
+    font-size:$h1;
+    font-weight:normal;
+}
+
+%primary {
+    background-color: $primary-color;
+    color: $primary-text-color;
+}
