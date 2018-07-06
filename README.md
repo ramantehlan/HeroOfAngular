@@ -154,12 +154,12 @@ tslint.json         | Linting configuration for [TSLint](https://palantir.github
 ## How to 
 This section will tell you how to do some basic tasks in Angular, without using CLI
 
-### How to add more components
+### How to add a component
 Let's say we want to create a component `test`
 
 1. **Create following files**
 
-```
+```bash
     src/app/test/test.component.css
     src/app/test/test.component.html
     src/app/test/test.component.spec.ts
@@ -235,6 +235,18 @@ declarations: [
   ]
 ```
 
+### How to Delete a component
+Let's say we want to delete a component `test`
+
+1. **Delete the component folder from the `src/app/` folder**
+<br>
+```bash
+    sudo rm -r test
+```
+
+2. **Remove declaration and import from `src/app/app.module.ts`**
+
+> Warning: Make sure before deleting any component, that it's not used by the app.
 
 ## Best Practice
 
