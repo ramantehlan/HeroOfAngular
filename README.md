@@ -306,3 +306,4 @@ Using different class and id name for Style Sheet and Script file is best, it av
 ## Resources
 - [Angular Guide](https://v5.angular.io/guide/quickstart)
 - [Airbnb JavaScript Guide](https://github.com/airbnb/javascript)
+- [Angular Best Practice](https://v5.angular.io/guide/styleguide)
