@@ -13,7 +13,6 @@ h1{
     padding:0px;
 }
 
-
 //
 // Mixines
 //
@@ -52,11 +51,11 @@ h1{
             height:$list-menu-height;
             line-height:$list-menu-height;
             border-radius:5px;
-            padding:{
+            padding: {
                 left:$list-menu-padding-gap;
                 right:$list-menu-padding-gap;
             }
-            margin:{
+            margin: {
                 right:$list-menu-padding-gap;
             }
     
