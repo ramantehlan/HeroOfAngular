@@ -1,0 +1,91 @@
+@import "../../style/_base.scss";
+
+//Hero list properties
+$list-height:30px;
+$list-width:150px;
+
+.heroes{
+    @extend %surface;
+
+    // list-width + padding of left and right
+    width:$list-width + 10;
+    position: relative;
+    left:30px;
+    top:30px;
+    float: left;
+    padding:{
+        top:10px;
+        bottom:20px;
+        left:40px;
+        right:40px;
+    }
+}
+
+
+.heroes-list{
+    list-style:none;
+    position: relative;
+    left:-40px;
+
+    li{
+        @extend %overflow-fix;
+        
+        font-size:13px;
+        width:$list-width;
+        height:$list-height;
+        line-height:$list-height;
+        background-color:$secondary-light-color;
+        color:$secondary-text-color;
+        cursor: pointer;
+        position: relative;
+        border-radius:$border-radius;
+        padding:{
+            right:10px;
+        }
+        margin:{
+            top:5px;
+        }
+
+        &:hover{
+            background-color:$secondary-color;
+        }
+    }
+
+    .heroes-list--selected{
+        background-color:$secondary-color;
+    }
+
+    .heroes-list_badge{
+        background-color: $secondary-dark-color;
+        color:$secondary-text-color;
+        display: inline-block;
+        font-size: small;
+        height:$list-height;
+        line-height:$list-height;
+        width: $list-height/2;
+        padding: {
+            left:12px;
+            right: 12px;
+        }
+        margin: {
+            right:10px;
+        }
+    }
+}
+
+.selected-hero-board{
+    @extend %surface;
+
+    position: relative;
+    //List width + padding of heroes and list.
+    margin-left:$list-width + 150;
+    margin-right:30px;
+    top:30px;
+    padding:{
+        top:10px;
+        bottom:20px;
+        left:40px;
+        right:40px;
+    }
+}
+

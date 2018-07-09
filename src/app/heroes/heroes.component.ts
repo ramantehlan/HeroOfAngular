@@ -11,6 +11,7 @@
 // 
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../../lib/hero';
+import { HEROES } from "../../lib/mock-heroes"
 
 @Component({
   selector: 'app-heroes',
@@ -19,12 +20,17 @@ import { Hero } from '../../lib/hero';
 })
 export class HeroesComponent implements OnInit {
 
-  //This is the stucture of hero class
-  //Here it is to hold the hero
-  hero:Hero = {
-    id: 1,
-    name: 'Windstorm'
-  };
+  //here we are assigning heroes
+  //We are recieving it from HEROES
+  heroes = HEROES;
+
+  //Currently selected hero to display
+  selectedHero:Hero;
+
+  //This function is called when user click on the heroes-list
+  onSelect(hero: Hero){
+    this.selectedHero = hero;
+  }
 
   constructor() { }
 
