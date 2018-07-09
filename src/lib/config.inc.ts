@@ -5,6 +5,8 @@
 * author:- Raman Tehlan
 * date of creation:- 6/07/18
 */
+
+export const appname: string = "HeroOfAngular";
 export class Config{
  appname: string = "HeroOfAngular" 
     
