@@ -17,6 +17,15 @@ h1{
 // Mixines
 //
 
+/*
+    This is to handle the overflow situation
+*/
+
+%overflow-fix{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /*
     It is to give any object the property of surface
@@ -27,7 +36,6 @@ h1{
     color: $surface-text-color;
     border-radius:$border-radius;
     border: $border;
-    padding:$box-padding
 }
 
 /*
