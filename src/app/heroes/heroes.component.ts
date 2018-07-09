@@ -20,14 +20,15 @@ import { HEROES } from "../../lib/mock-heroes"
 })
 export class HeroesComponent implements OnInit {
 
-  //here we are assigning heroes
-  //We are recieving it from HEROES
+  // here we are assigning heroes
+  // We are recieving it from HEROES
+  // It is directly used in templete, let hero of heroes
   heroes = HEROES;
 
-  //Currently selected hero to display
+  //  Currently selected hero to display
   selectedHero:Hero;
 
-  //This function is called when user click on the heroes-list
+  //  This function is called when user click on the heroes-list
   onSelect(hero: Hero){
     this.selectedHero = hero;
   }

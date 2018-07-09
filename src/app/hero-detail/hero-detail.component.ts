@@ -1,4 +1,7 @@
+// Input is specially added here
+// Since we are fetching a input from paretn component
 import { Component, OnInit, Input} from '@angular/core';
+// To get the structure of the hero
 import { Hero } from '../../lib/hero';
 
 @Component({
@@ -9,6 +12,7 @@ import { Hero } from '../../lib/hero';
 export class HeroDetailComponent implements OnInit {
 
   //We are getting it from the other component
+  //it is fetched from heroes component
   @Input() hero: Hero;
   
   constructor() { }
