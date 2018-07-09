@@ -11,12 +11,10 @@
 //  Import area
 // 
 import { Component } from '@angular/core';
-import { Config } from '../lib/config.inc';
 
 //
 // Imported Classes
 //
-let config = new Config();
 
 //
 // Root component
