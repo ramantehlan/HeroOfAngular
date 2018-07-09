@@ -10,12 +10,11 @@
 //  Import area
 // 
 import { Component, OnInit } from '@angular/core';
-import { Config } from '../../lib/config.inc';
+import { appname } from '../../lib/config.inc';
 
 //
 // Imported Classes
 //
-let config = new Config();
 
 //
 // Root component
@@ -26,7 +25,7 @@ let config = new Config();
   styleUrls: ['./top.component.scss']
 })
 export class TopComponent implements OnInit {
-  title:string = config.appname;
+  title:string = appname;
 
   constructor() { }
 
