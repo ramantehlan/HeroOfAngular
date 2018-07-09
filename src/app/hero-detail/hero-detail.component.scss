@@ -1,0 +1,18 @@
+@import "../../style/_base.scss";
+
+.selected-hero-board{
+    @extend %surface;
+
+    position: relative;
+    //List width + padding of heroes and list.
+    margin-left:$list-width + 150;
+    margin-right:30px;
+    top:30px;
+    padding:{
+        top:10px;
+        bottom:20px;
+        left:40px;
+        right:40px;
+    }
+}
+
