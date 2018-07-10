@@ -332,6 +332,10 @@ Let's say we want to delete a service `test`
     ]
 ```
 
+> Info: There are several ways to provide a service, we can add it in different components. 
+
+> Warning: Make sure before deleting any service, that it's not used by the app. 
+
 ## Best Practice
 
 ### **General**
