@@ -296,9 +296,41 @@ export class HeroService {
 }
 ```
 
+4. **Add service to providers in `app.module.ts`**
+
+```typescript
+    ...
+    import { HeroService } from "./hero.service.ts";
+    ...
+    providers:[
+        HeroService,
+        ...
+    ]
+```
+
 ### How to Delete a service
 Let's say we want to delete a service `test`
 
+1. **Delete following files**
+
+```bash
+        src/app/test.service.spec.ts
+        src/app/test.service.ts
+```
+
+2. **Remove it from `app.module.ts`**
+
+```typescript
+     ...
+     // Remove it
+    import { TestService } from "./test.service.ts";
+    ...
+    // Remove TestService from providers
+    providers:[
+        TestService,
+        ...
+    ]
+```
 
 ## Best Practice
 
