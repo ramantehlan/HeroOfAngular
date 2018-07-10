@@ -11,7 +11,7 @@
 // 
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../../lib/hero';
-import { HEROES } from "../../lib/mock-heroes"
+import { HeroService } from "../hero.service";
 
 @Component({
   selector: 'app-heroes',
@@ -23,7 +23,7 @@ export class HeroesComponent implements OnInit {
   // here we are assigning heroes
   // We are recieving it from HEROES
   // It is directly used in templete, let hero of heroes
-  heroes = HEROES;
+  heroes: Hero[];
 
   //  Currently selected hero to display
   selectedHero:Hero;
@@ -33,9 +33,17 @@ export class HeroesComponent implements OnInit {
     this.selectedHero = hero;
   }
 
-  constructor() { }
+  // This is to retrieve the heroes from the service
+  // This function get called in ngOnInit
+  getHeroes(): void{
+    this.heroes = this.heroService.getHeroes();
+  }
+
+  constructor(private heroService: HeroService) { }
 
   ngOnInit() {
+    // To collect the heroes list
+    this.getHeroes();
   }
 
 }

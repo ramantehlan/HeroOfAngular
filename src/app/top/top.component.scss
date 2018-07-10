@@ -8,7 +8,7 @@
 //
 $padding-gap: 30px;
 $menu-height: 40px;
-
+$top-h1-font-size:20px;
 
 //
 // Main style
@@ -21,9 +21,10 @@ $menu-height: 40px;
 
     h1{
         float: left;
+        font-size:$top-h1-font-size;
         
         margin:{
-            top:($top-height - $h1)/2 - 5;
+            top:($top-height - $top-h1-font-size)/2 - ($top-h1-font-size / 5);
             left:$padding-gap;
         }
     }
