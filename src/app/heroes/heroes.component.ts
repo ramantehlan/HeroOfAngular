@@ -36,7 +36,9 @@ export class HeroesComponent implements OnInit {
   // This is to retrieve the heroes from the service
   // This function get called in ngOnInit
   getHeroes(): void{
-    this.heroes = this.heroService.getHeroes();
+    // using observable.subscribe()
+    // subscribe( data => this.variable-to-assign = heroes)
+    this.heroService.getHeroes().subscribe( heroes => this.heroes = heroes );
   }
 
   constructor(private heroService: HeroService) { }
