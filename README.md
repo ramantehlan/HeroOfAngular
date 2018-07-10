@@ -251,6 +251,55 @@ Remove Import of `TestComponent` from imports and remove it from declarations.
 
 > Warning: Make sure before deleting any component, that it's not used by the app.
 
+### How to create a service
+let's say we want to create a service called `hero`
+
+1. **Create following files**
+
+```bash
+        src/app/hero.service.spec.ts
+        src/app/hero.service.ts
+```
+
+2. **Paste following code in `hero.service.spec.ts`**
+
+```typescript
+import { TestBed, inject } from '@angular/core/testing';
+
+import { HeroService } from './hero.service';
+
+describe('HeroService', () => {
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      providers: [HeroService]
+    });
+  });
+
+  it('should be created', inject([HeroService], (service: HeroService) => {
+    expect(service).toBeTruthy();
+  }));
+});
+
+```
+
+3. **Paster Following code in ``hero.service.ts``**
+
+```typescript
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class HeroService {
+
+  constructor() { }
+}
+```
+
+### How to Delete a service
+Let's say we want to delete a service `test`
+
+
 ## Best Practice
 
 ### **General**
