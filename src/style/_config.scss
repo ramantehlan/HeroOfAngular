@@ -9,25 +9,40 @@
 //
 // Material Colors
 //
-$primary-color: #b118c8;
-$primary-light-color: #6746c3;
-$primary-dark-color: #000063;
-$secondary-color: #263238;
-$secondary-light-color: #4f5b62;
-$secondary-dark-color: #000a12;
-$background-color: #858c93;
+
+// Fundamentals
+$primary-color: #5663ef;
+$primary-light-color: #848df3;
+$primary-dark-color: #2f3683;
+$secondary-color: #183446;
+$secondary-light-color: #6c7d89;
+$secondary-dark-color: #0e1d27;
+
+// Minor
+$background-color: #DAE0E6;
 $surface-color: #ffffff;
 $error-color: #b71c1c;
-$border-color: #d6e2eb;
+$success-color: #48a31f;
+$success-light-color: #59c926;
+$success-dark-color: #387f18;
+$input-background: #f6f7f8;
+
+// Border 
+$border-color: #c6cbd1;
+$error-border-color:#771111;
+$success-border-color:#2a5408;
+$input-border-color: #edeff1;
 
 //
 // Text Colors
 //
 $primary-text-color: #fff;
 $secondary-text-color: #fff;
-$background-text-color: #000;
+$background-text-color: #222222;
 $surface-text-color: #1c1c1c;
 $error-text-color: #fff;
+$success-text-color: #fff;
+$input-color:#000;
 
 //
 // Fonts
@@ -39,6 +54,7 @@ $error-text-color: #fff;
 // Test Size
 //
 $h1: 30px;
+$success-text-size: 13px;
 
 //
 // Dimentions/factos
