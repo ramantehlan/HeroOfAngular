@@ -1,0 +1,14 @@
+<div class="messages" *ngIf="messageService.messages.length">
+
+    <div class='success-box'
+        *ngFor="let message of messageService.messages">
+        <button class="clear" 
+              (click)="messageService.clear()">X</button>
+        <div class="success-box-text">
+        {{ message }}
+       </div>
+    
+    </div>
+
+
+</div>

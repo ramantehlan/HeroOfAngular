@@ -1,0 +1,45 @@
+@import "../../style/_base.scss";
+
+$box-width: 300px;
+
+.messages{
+    position: absolute;
+    right:30px;
+    bottom:30px;
+}
+
+.success-box{
+    @extend %success-box;
+    
+    width:$box-width;
+    margin:{
+        top:10px;
+    }
+    padding:{
+        top:15px;
+        bottom:15px;
+        left:20px;
+        right:10px;
+    }
+
+    .success-box-text{
+        width:$box-width - 30px;
+    }
+
+
+    button{
+        @extend %button;
+            
+        float:right;
+        font-size:10px;
+        height:25px;
+        background-color: $success-color;
+        margin:{
+            top: -5px;
+        }
+
+        &:hover{
+            background-color: $success-dark-color;
+        }
+    }
+}
