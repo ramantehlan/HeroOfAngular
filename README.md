@@ -77,6 +77,11 @@ HeroOfAngular
 |--node_modules/...
 |--src
 |   |--app
+|   |   |--hero-detail/...
+|   |   |--heroes/...
+|   |   |--messages/...
+|   |   |--top/...
+|   |   |
 |   |   |--app.component.css
 |   |   |--app.component.html
 |   |   |--app.component.spec.ts
@@ -92,7 +97,15 @@ HeroOfAngular
 |   |
 |   |--lib
 |   |   |--config.inc.ts
+|   |   |--hero.ts
+|   |   |--mock-heroes.ts
 |   |
+|   |--service
+|   |   |--hero.service.spec.ts
+|   |   |--hero.service.ts
+|   |   |--message.service.spec.ts
+|   |   |--message.service.ts
+|   | 
 |   |--style
 |   |   |--_base.scss
 |   |   |--_config.scss
