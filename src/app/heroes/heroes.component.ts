@@ -11,7 +11,7 @@
 // 
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../../lib/hero';
-import { HeroService } from "../hero.service";
+import { HeroService } from "../../service/hero.service";
 
 @Component({
   selector: 'app-heroes',
@@ -39,6 +39,7 @@ export class HeroesComponent implements OnInit {
     // using observable.subscribe()
     // subscribe( data => this.variable-to-assign = heroes)
     this.heroService.getHeroes().subscribe( heroes => this.heroes = heroes );
+    //this.heroes = this.heroService.getHeroes();
   }
 
   constructor(private heroService: HeroService) { }

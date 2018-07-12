@@ -3,7 +3,7 @@
     <div class='success-box'
         *ngFor="let message of messageService.messages">
         <button class="clear" 
-              (click)="messageService.clear()">X</button>
+              (click)="messageService.remove(message)">X</button>
         <div class="success-box-text">
         {{ message }}
        </div>
