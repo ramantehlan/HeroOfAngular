@@ -16,7 +16,7 @@ export class HeroService {
 
   // To pass the feroes list when requested
   // Observable is to make the process synchronous
-  getHeroes(): Obervable<Hero[]>{
+  getHeroes(): Observable<Hero[]>{
     // ToDo: send the message _after_fetched
     this.messageService.add('HeroService: fetched heroes');
     return of(HEROES);

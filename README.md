@@ -138,7 +138,10 @@ File | Purpose |
 app/app.component.{ts,html,css,spec.ts} | Root components of what will become a tree of nested components, as the app grow. 
 app/app.module.ts | `root module` tells angular how to assemble the application.
 assets/* | Place to put assets like images, gifs etc.
-environments/* | 
+environments/* | This folder contains one file for each of your destination environments
+lib/* | User defined libraries will be stored here.
+service/* | Services used by components are defined here.
+style/* | User defined style libraries will be stored here.
 favicon.ico | You app icon.
 index.html | Main HTML page, CLI automatically adds all the required file, like js, css etc while building your app.
 main.ts | Main entry point for your app
