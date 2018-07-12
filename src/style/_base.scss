@@ -31,10 +31,20 @@ input{
 //
 
 /*
+    Give shadow to different objects
+*/ 
+
+%shadow{
+    box-shadow:0px 2px 2px 0.3px #b8bcc1;
+}
+
+/*
     This is to define the success box
 */
 
 %success-box{
+    @extend %shadow;
+
     background-color: $success-color;
     color: $success-text-color;
     border-radius:$border-radius;
@@ -59,6 +69,8 @@ input{
 
 
 %surface{
+    @extend %shadow;
+
     background-color: $surface-color;
     color: $surface-text-color;
     border-radius:$border-radius;
