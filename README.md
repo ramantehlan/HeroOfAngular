@@ -100,6 +100,10 @@ HeroOfAngular
 |   |   |--hero.ts
 |   |   |--mock-heroes.ts
 |   |
+|   |--module
+|   |   |--app-routing.module.spec.ts
+|   |   |--app-routing.module.ts
+|   |
 |   |--service
 |   |   |--hero.service.spec.ts
 |   |   |--hero.service.ts
