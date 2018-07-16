@@ -298,7 +298,7 @@ describe('HeroService', () => {
 
 ```
 
-3. **Paster Following code in ``hero.service.ts``**
+3. **Paste Following code in ``hero.service.ts``**
 
 ```typescript
 import { Injectable } from '@angular/core';
@@ -351,6 +351,62 @@ Let's say we want to delete a service `test`
 > Info: There are several ways to provide a service, we can add it in different components. 
 
 > Warning: Make sure before deleting any service, that it's not used by the app. 
+
+### How to add a module
+Let's say we want to create a module app-routing.
+
+1. **Create following files**
+
+```bash 
+    src/module/app-routing.module.spec.ts
+    src/module/app-routing.module.ts
+```
+
+2. **Paste following code in `app-routing.module.spec.ts`**
+
+```typescript
+import { AppRoutingModule } from './app-routing.module';
+
+describe('AppRoutingModule', () => {
+  let appRoutingModule: AppRoutingModule;
+
+  beforeEach(() => {
+    appRoutingModule = new AppRoutingModule();
+  });
+
+  it('should create an instance', () => {
+    expect(appRoutingModule).toBeTruthy();
+  });
+});
+
+```
+
+3. **Paster following code in `app-rounting.module.ts`**
+
+```typescript
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@NgModule({
+  imports: [
+    CommonModule
+  ],
+  declarations: []
+})
+export class AppRoutingModule { }
+
+```
+
+4. **Import app-routing class in `app.module.ts`**
+
+```typescript
+    import { AppRoutingModule } from '../module/app-routing.module';
+    ...
+    imports: [
+    ...
+    AppRoutingModule
+    ]
+```
 
 ## Best Practice
 
