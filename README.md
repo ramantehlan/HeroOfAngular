@@ -412,6 +412,9 @@ export class AppRoutingModule { }
     ]
 ```
 
+### How to Remove a module
+Let's say we wish to remove the module 
+
 ## Best Practice
 
 ### **General**
