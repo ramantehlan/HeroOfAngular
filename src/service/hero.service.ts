@@ -22,6 +22,11 @@ export class HeroService {
     return of(HEROES);
   }
 
+  // To fetch the hero with id 
+  getHero(id: number): Observable<Hero>{
+    return of(HEROES[id]);
+  }
+
   constructor(private messageService: MessageService) {
 
    }
