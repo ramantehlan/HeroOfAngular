@@ -8,13 +8,16 @@
       (click) is to event bind a function, and send the selected data
       [class.class-name]="(if case here)"
     -->
-    <li 
-      *ngFor="let hero of heroes" 
-      (click)="onSelect(hero)" 
-      [class.heroes-list--selected]="hero === selectedHero">
+     <!--
+      [class.heroes-list--selected]="hero === selectedHero"
+      (click)="onSelect(hero)"-->
+    <a *ngFor="let hero of heroes"  
+      routerLink="/details/{{hero.id}}">
+    <li >
       <span class="heroes-list_badge"> {{ hero.id }}</span>
       {{hero.name}}
     </li>
+    </a>
 
   </ul>
 
@@ -23,5 +26,5 @@
 <!-- 
   We are sending the selectedHero as a hero in app-hero-detail
 -->
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<!--<app-hero-detail [hero]="selectedHero"></app-hero-detail>-->
 

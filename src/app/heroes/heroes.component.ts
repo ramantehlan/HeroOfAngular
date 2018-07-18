@@ -10,8 +10,11 @@
 //  Import area
 // 
 import { Component, OnInit } from '@angular/core';
+// To get the structure of hero
 import { Hero } from '../../lib/hero';
+// To get the list of all the heroes from service 
 import { HeroService } from "../../service/hero.service";
+
 
 @Component({
   selector: 'app-heroes',
@@ -25,14 +28,6 @@ export class HeroesComponent implements OnInit {
   // It is directly used in templete, let hero of heroes
   heroes: Hero[];
 
-  //  Currently selected hero to display
-  selectedHero:Hero;
-
-  //  This function is called when user click on the heroes-list
-  onSelect(hero: Hero){
-    this.selectedHero = hero;
-  }
-
   // This is to retrieve the heroes from the service
   // This function get called in ngOnInit
   getHeroes(): void{
@@ -42,7 +37,9 @@ export class HeroesComponent implements OnInit {
     //this.heroes = this.heroService.getHeroes();
   }
 
-  constructor(private heroService: HeroService) { }
+  constructor(
+    private heroService: HeroService,
+  ) { }
 
   ngOnInit() {
     // To collect the heroes list
