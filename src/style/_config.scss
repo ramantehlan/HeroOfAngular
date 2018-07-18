@@ -56,7 +56,12 @@ $input-color:#000;
 //
 // Test Size
 //
-$h1: 30px;
+$h1 : 2em;
+$h2 : 1.5em;
+$h3 : 1.3em;
+$h4 : 1em;
+$h5 : 0.8em;
+$h6 : 0.7em;
 $success-text-size: 13px;
 
 //
@@ -78,3 +83,4 @@ $list-width:180px;
 //
 $border: 1px solid $border-color;
 $border-radius:6px;
+$page-margin: 30px;
