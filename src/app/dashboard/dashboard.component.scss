@@ -1,0 +1,44 @@
+// 
+//  This sheet is to design the header of the page
+// 
+@import '../../style/_base.scss';
+
+//
+// Variables
+//
+
+
+//
+// Main style
+//
+.dashboard{
+    margin:$page-margin;
+}
+
+.grid{
+    background:green;
+    
+}
+
+
+.grid-item{
+    @extend %surface;
+
+    float: left;
+    text-align:center;
+    max-height: 140px;
+    min-width:180px;
+    
+    padding:{
+        left:20px;
+        right:20px;
+    }
+    margin:{
+        right:20px;
+        bottom:20px;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+}
