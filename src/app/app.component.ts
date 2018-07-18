@@ -11,6 +11,8 @@
 //  Import area
 // 
 import { Component } from '@angular/core';
+// Adding the message service
+import { MessageService } from "../service/message.service";
 
 //
 // Imported Classes
@@ -25,5 +27,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+    constructor(private messageService: MessageService){
+      this.messageService.add("App Started.");
+    }
    
 }
