@@ -1,5 +1,6 @@
 <div class='selected-hero-board' *ngIf="hero">
     <h2> {{ hero.name || uppercase}} </h2>
+    <button (click)="goBack()">go back</button>
     <div> 
       <span>id: </span>
       {{ hero.id }}
